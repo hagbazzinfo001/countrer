@@ -26,21 +26,19 @@ document.getElementById("resetIcon1").addEventListener("click", function() {
     document.getElementById("output1").value = counter1; // Update input field
 });
 //   arabic output
-var counter2 = 0; // Initialize counter
-
-// Function to convert numbers to Arabic numerals
+var counter2 = 0; 
 function toArabicNumerals(num) {
     return num.toString().replace(/\d/g, function(digit) {
         return '٠١٢٣٤٥٦٧٨٩'[digit];
     });
 }
- document.getElementById("incrementIcon").addEventListener("click", function() {
-    counter2++; // Increment counter
-    document.getElementById("output2").value = toArabicNumerals(counter2); // Convert and update the input field
+ document.getElementById("incrementIconArabic").addEventListener("click", function() {
+    counter2++;  
+    document.getElementById("output2").value = toArabicNumerals(counter2);  
 });
- document.getElementById("resetIcon").addEventListener("click", function() {
-    counter2 = 0; // Reset counter to zero
-    document.getElementById("output2").value = toArabicNumerals(counter2); // Convert and update the input field
+ document.getElementById("resetIconArabic").addEventListener("click", function() {
+    counter2 = 0; 
+    document.getElementById("outputArabic").value = toArabicNumerals(counter2);  
 });
 function  myMode() {
     var element = document.body;
