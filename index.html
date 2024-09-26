@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+</head>
+<link rel="stylesheet" href="/asset/counter.css">
+<body>
+    <h4>Easy Count</h4>           
+<fieldset>
+<legend>Start Counting</legend>
+<div>
+<div id="counter2" >
+ <figure>
+   <img src="/asset/images/incrememt circle up.svg" id="incrementIcon1" alt="Increment Counter" style="cursor:pointer; width:120px;">
+    <figcaption>Start</figcaption>
+ </figure>
+ <input type="text" name="counter" id="output1" value="0" readonly>
+
+<figure>
+ <img src="/asset/images/reset.svg" id="resetIcon1" alt="Reset Counter" style="cursor:pointer; width:50px;">
+   <figcaption>Reset</figcaption>
+ </figure>
+
+</div>
+</fieldset>
+ 
+
+<div id="arabic">
+<button a href="arabic.html"> Swicth to Arabic</a> </button>
+</div>
+<div class="toggle">   
+<label class="switch"> 
+ <input type="checkbox" checked onclick="myMode()" >
+ <span class="slider round"></span>
+</label>
+<span id="myMode">Light</span>
+</div>
+ <script src="asset/counter.js"></script>
+  <!-- <script>
+    document.getElementById("switchButton").addEventListener("click", function() {
+   window.location.href="arabic.html"
+});
+
+  </script> -->
+</body>
+</html>

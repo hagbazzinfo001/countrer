@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic</title>
+</head>
+<link rel="stylesheet" href="/asset/counter.css">
+<body>
+    
+          <h4>Easy Count</h4>           
+    <fieldset>
+      <legend > بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْ, </legend>
+      <div>
+        <div id="counter2" >
+          <figure>
+            <img src="/asset/images/incrememt circle up.svg" id="incrementIcon" alt="Increment Counter" style="cursor:pointer; width:120px;">
+             <figcaption>Start</figcaption>
+          </figure>
+          <input type="text" name="counter" id="output2" value="٠" readonly>
+    
+         <figure>
+          <img src="/asset/images/reset.svg" id="resetIcon" alt="Reset Counter" style="cursor:pointer; width:50px;">
+            <figcaption>Reset</figcaption>
+          </figure>
+      </div>
+    </div>
+    </fieldset>
+    <div id="arabic">
+      <button id="switchButton">Switch to English</button>
+      </div>
+      <div class="toggle">   
+        <label class="switch"> 
+          <input type="checkbox" checked onclick="myMode()" >
+          <span class="slider round"></span>
+        </label>
+        <span id="myMode">Light</span>
+       </div>
+ 
+       <script src="/asset/counter.js"></script>
+       <!-- <script>
+              document.getElementById("switchButton").addEventListener("click", function() {
+              window.location.href="index.html"
+              });
+       </script> -->
+<script>
+//   var counter2 = 0; // Initialize counter
+
+// // Function to convert numbers to Arabic numerals
+// function toArabicNumerals(num) {
+//     return num.toString().replace(/\d/g, function(digit) {
+//         return '٠١٢٣٤٥٦٧٨٩'[digit];
+//     });
+// }
+//  document.getElementById("incrementIcon").addEventListener("click", function() {
+//     counter2++; // Increment counter
+//     document.getElementById("output2").value = toArabicNumerals(counter2); // Convert and update the input field
+// });
+//  document.getElementById("resetIcon").addEventListener("click", function() {
+//     counter2 = 0; // Reset counter to zero
+//     document.getElementById("output2").value = toArabicNumerals(counter2); // Convert and update the input field
+// });
+// function  myMode() {
+//     var element = document.body;
+//     element.classList.toggle("darkMode");
+//     var x = document.getElementById("myMode");
+//     if (x.innerHTML === "Light") {
+//       x.innerHTML = "Dark";
+//     } else {
+//       x.innerHTML = "Light";
+//     }
+//  }
+</script>
+</body>
+  </html>
